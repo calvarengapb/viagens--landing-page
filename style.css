@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #004d99;
+    color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navegacao-principal ul {
+    display: flex;
+}
+
+.navegacao-principal ul li {
+    margin-left: 30px;
+}
+
+.navegacao-principal ul li a {
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacao-principal ul li a:hover {
+    background-color: #ff6f00;
+    color: #fff;
+}
+
+.banner {
+    background-image: url('https://picsum.photos/seed/europevilage/1600/800');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* fallback */
+    background-color: #888;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.banner-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-overlay h2 {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #cc5800;
+    transform: translateY(-2px);
+}
+
+.secao {
+    padding: 80px 50px;
+    text-align: center;
+    min-height: 400px;
+    scroll-margin-top: 65px;
+}
+
+.secao h2 {
+    font-size: 2.5em;
+    color: #004d99;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff6f00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.secao article {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.secao p, .secao ul {
+    margin-bottom: 20px;
+}
+
+.secao ul {
+    padding-left: 20px;
+}
+
+.secao li {
+    margin-bottom: 10px;
+}
+
+.secao-alternada {
+    background-color: #eaf4ff;
+}
+
+.voltar-topo {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-topo:hover {
+    background-color: #004d99;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
